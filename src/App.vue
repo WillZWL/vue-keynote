@@ -1,6 +1,8 @@
 <template>
   <main class="reveal">
     <router-view></router-view>
+    <catalogue-buttom></catalogue-buttom>
+    <catalogue></catalogue>
     <nav-bar></nav-bar>
     <controls></controls>
   </main>
@@ -8,12 +10,16 @@
 
 <script>
   import NavBar from 'components/Nav-bar'
-  import controls from 'components/Controls'
+  import Controls from 'components/Controls'
+  import CatalogueButtom from 'components/Catalogue-button'
+  import Catalogue from 'components/Catalogue'
   export default {
     name: 'app',
     components: {
-      controls,
-      NavBar
+      Controls,
+      NavBar,
+      Catalogue,
+      CatalogueButtom
     }
   }
 </script>
@@ -55,14 +61,6 @@
       &.active {
         background-color: #41B883;
         height: 6px;
-      }
-    }
-    &:hover {
-      a {
-        //height: 16px;
-        &.active {
-          height: 16px;
-        }
       }
     }
   }

@@ -8,8 +8,14 @@ export const routes = [
   {
     keynote: true,
     path: '/home',
-    name: 'Hello',
+    name: 'Home',
     component: require('@/pages/Hello')
+  },
+  {
+    keynote: true,
+    path: '/what',
+    name: 'What',
+    component: require('@/pages/What')
   },
   {
     keynote: true,
@@ -31,37 +37,85 @@ export const routes = [
   },
   {
     keynote: true,
-    path: '/commands',
-    name: 'Commands',
-    component: require('@/pages/Commands')
+    path: '/build-tool',
+    name: 'Build Tool',
+    component: require('@/pages/Build-tool')
   },
   {
     keynote: true,
-    path: '/vue-list',
-    name: 'Vue-list',
-    component: require('@/pages/Vue-list')
+    path: '/vue-router',
+    name: 'Vue-router',
+    component: require('@/pages/Vue-router')
   },
   {
     keynote: true,
-    path: '/vue-init',
-    name: 'Vue-init',
-    component: require('@/pages/Vue-init')
+    path: '/vuex',
+    name: 'Vuex',
+    component: require('@/pages/Vuex')
   },
   {
     keynote: true,
-    path: '/vue-build',
-    name: 'Vue-build',
-    component: require('@/pages/Vue-build')
+    path: '/one-way-data-flow',
+    name: 'Vuex Flow',
+    component: require('@/pages/One-way-data-flow')
   },
   {
     keynote: true,
-    path: '/create-your-own-template',
-    name: 'Create',
-    component: require('@/pages/Create')
+    path: '/basic-idea-behind-vuex',
+    name: 'Basic-idea-behind-vuex',
+    component: require('@/pages/Basic-idea-behind-vuex')
   },
   {
     keynote: true,
-    path: '/cy@',
+    path: '/webpack',
+    name: 'Webpack',
+    component: require('@/pages/Webpack')
+  },
+  {
+    keynote: true,
+    path: '/notes',
+    name: 'Notes',
+    component: require('@/pages/Notes')
+  },
+  {
+    keynote: true,
+    path: '/standards',
+    name: 'Standards',
+    component: require('@/pages/Standards')
+  },
+  {
+    keynote: true,
+    path: '/vue-ssr',
+    name: 'Vue-SSR',
+    component: require('@/pages/Vue-ssr')
+  },
+  {
+    keynote: true,
+    path: '/useful-tool-for-vue',
+    name: 'Useful-tool',
+    component: require('@/pages/Useful-tool')
+  },
+  {
+    keynote: true,
+    path: 'vue-application-scenarios',
+    name: 'Application-scenarios',
+    component: require('@/pages/Application-scenarios')
+  },
+  {
+    keynote: true,
+    path: '/yarn',
+    name: 'yarn',
+    component: require('@/pages/Yarn')
+  },
+  {
+    keynote: true,
+    path: 'awesome-vue',
+    name: 'Awesome Vue.js',
+    component: require('@/pages/Awesome-vue')
+  },
+  {
+    keynote: true,
+    path: '/thanks',
     name: 'Bye',
     component: require('@/pages/Bye')
   },

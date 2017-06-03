@@ -8,7 +8,6 @@
 <script>
   export default {
     name: 'title',
-
     props: {
       legend: {
         type: String

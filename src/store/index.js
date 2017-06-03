@@ -12,7 +12,8 @@ const pageChanger = ({page = 0, pages = []}) => {
 export default new Vuex.Store({
   state: {
     page: 0,
-    pages: []
+    pages: [],
+    catalogueHidden: true,
   },
 
   mutations: {
@@ -31,6 +32,9 @@ export default new Vuex.Store({
       state.page--
       const { page, pages } = state
       return pageChanger({page, pages})
+    },
+    HIDDEN (state, payload) {
+      state.catalogueHidden = payload
     }
   },
 
@@ -50,6 +54,10 @@ export default new Vuex.Store({
     onLast({commit, state}) {
       if(state.page <= 0) return
       commit('LAST')
+    },
+    setHidden({commit, getters}, {hidden}) {
+      hidden = getters.isHidden ? false: true;
+      commit('HIDDEN', hidden);
     }
   },
 
@@ -63,6 +71,9 @@ export default new Vuex.Store({
     },
     currentPage: state => {
       return state.page
+    },
+    isHidden: state => {
+      return state.catalogueHidden
     }
   }
 })

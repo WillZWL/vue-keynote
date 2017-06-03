@@ -1,12 +1,23 @@
 <template>
-  <article>
+  <article :class="turnOnOrOff">
     <slot></slot>
   </article>
 </template>
 
 <script>
+  import {mapGetters, mapActions} from 'vuex'
+
   export default {
-    name: 'box'
+    name: 'box',
+
+    computed: {
+      ...mapGetters([
+          'isHidden'
+        ]),
+      turnOnOrOff: function() {
+        return this.isHidden ? 'off' : 'on'
+      }
+    }
   }
 </script>
 
@@ -23,5 +34,11 @@
     align-items: center;
     justify-content: center;
     color: $white;
+  }
+  .on {
+    opacity: 0.05
+  }
+  .off {
+    opacity: 1
   }
 </style>
