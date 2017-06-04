@@ -109,7 +109,7 @@ export const routes = [
   },
   {
     keynote: true,
-    path: 'awesome-vue',
+    path: '/awesome-vue',
     name: 'Awesome Vue.js',
     component: require('@/pages/Awesome-vue')
   },

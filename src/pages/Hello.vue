@@ -3,15 +3,15 @@
     <img src="../../static/images/logo.png">
     <h2>{ { Vue 分享 } }</h2>
     <aside>
-      <a href="#" target="_blank">vue-router</a>
-      <a href="#" target="_blank">vuex</a>
-      <a href="#" target="_blank">Webpack</a>
+      <router-link :to="'/vue-router'">Vue-router</router-link>
+      <router-link :to="'/vuex'">Vuex</router-link>
+      <router-link :to="'/Webpack'">Webpack</router-link>
     </aside>
     <aside>
-      <a href="#" target="_blank">vue-cli</a>
-      <a href="#" target="_blank">vuex</a>
-      <a href="#" target="_blank">vue-resouces</a>
-      <a href="#" target="_blank">Vue SSR</a>
+      <router-link :to="'/build-tool'">Vue-cli</router-link>
+      <router-link :to="'/yarn'">Yarn</router-link>
+      <router-link :to="'/vue-ssr'">Vue SSR</router-link>
+      <router-link :to="'/awesome-vue'">Awesome-vue</router-link>
     </aside>
     <p>By 张伟林    (00416624)</p>
   </box>
