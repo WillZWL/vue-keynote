@@ -9,7 +9,7 @@ export const routes = [
     keynote: true,
     path: '/home',
     name: 'Home',
-    component: require('@/pages/Hello')
+    component: require('@/pages/Home')
   },
   {
     keynote: true,
@@ -115,12 +115,18 @@ export const routes = [
   },
   {
     keynote: true,
+    path: 'q-and-a',
+    name: 'Q&A',
+    component: require('@/pages/Q-and-a')
+  },
+  {
+    keynote: true,
     path: '/thanks',
     name: 'Bye',
     component: require('@/pages/Bye')
   },
 
-  { path: '*', redirect: { name: 'Hello' } }
+  { path: '*', redirect: { name: 'Home' } }
 ]
 
 const pages = routes.filter(page => page.keynote).map(page => page.name )

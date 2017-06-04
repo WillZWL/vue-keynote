@@ -1,6 +1,7 @@
 <template>
   <box>
-    <v-title legend="Notes"></v-title>
+    <img src="../../static/images/logo.png">
+    <v-title legend="Q & A"></v-title>
     <v-wrap>
       
     </v-wrap>
@@ -9,6 +10,6 @@
 
 <script>
   export default {
-    name: 'Notes'
+    name: 'Question-and-Answer'
   }
 </script>
